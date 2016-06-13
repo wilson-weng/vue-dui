@@ -31,11 +31,15 @@
 			},
 			onSelect: {
 				type: Function
+			},
+			defaultIndex: {
+				type: Number,
+				required: false
 			}
 		},
 		data(){
 			return {
-				selectedIndexs: [],
+				selectedIndexs: [this.defaultIndex],
 			};
 		},
 		computed: {

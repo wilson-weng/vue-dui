@@ -96,6 +96,7 @@
 			},
 			touchend(event){
 //				event.preventDefault();
+				if(this.options.length <= 1) return;
 				let touchStartX = event.changedTouches[0].pageX;
 				if(touchStartX > this._touchStartX){
 					this.prev();
